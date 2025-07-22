@@ -25,14 +25,25 @@
 
                 <div>
                     <script>
-                        var nome = (window.prompt("Qual seu nome?"))
-                        var idade = Number(window.prompt("Qual sua idade?"))
+                        var caneta1 = window.prompt("Eu quero 2 canetas azuis. Qual sua primeira caneta?")
+                        var caneta2 = window.prompt("Agora, qual sua segunda caneta?")
 
-                        var nascimento = idade - 2025
+                        if ( caneta1 && caneta2 !== 'azul' ) { window.alert('Inaceitável!') }
 
-                        window.alert(`Olá ${nome.toUpperCase()}! Seu nome tem ${nome.length} letras!`)
+                        if ( caneta1 && caneta2 === 'azul' ) 
+                        { 
+                            window.alert('Ótimo! pode passar.') 
+                        }
 
-                        window.alert(`E você nasceu em ${nascimento}!`)
+                        var resp1 = window.prompt("Em que país você está?")
+
+                        resp1 === 'brasil'? window.alert('Acertou!') : window.alert('Errou!')
+
+                        var idade = Number(window.prompt('Qual sua idade?'))
+
+                        var conclusao = idade >= 18? 'Você já pode dirigir.' : 'Você NÃO pode dirigir!'
+
+                        window.alert(conclusao)
                     </script>
                 </div>
 
