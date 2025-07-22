@@ -1,11 +1,62 @@
 body {
     margin: 0;
+    font-family: arial;
 }
-.banner {
+.container {
+    z-index: 2;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------------------------------------------------*/
+.sec-menu {
+    
+}
+.menu-content {
+
+}
+.sec-banner {
     background-image: url(../img/background-htmlcss.jpg);
     width: 100%;
-    height: 500px;
+    height: 100vh;
+    position: relative;
     background-position: center;
     background-size: cover;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+.title-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.title {
+    font-size: 45px;
+}
+.group-text {
+
+
+}
+.sec-dominio-hospedagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
