@@ -10,7 +10,7 @@
     <section class="sec-menu">
         <div class="container">
             <div class="menu-content">
-
+                
             </div>
         </div>
     </section>
@@ -23,32 +23,8 @@
                     <h1 class="title">HTML? CSS? Como assim?</h1>
                 </div>
 
-                <div>
-                    <script>
-                        var caneta1 = window.prompt("Eu quero 2 canetas azuis. Qual sua primeira caneta?")
-                        var caneta2 = window.prompt("Agora, qual sua segunda caneta?")
-
-                        if ( caneta1 && caneta2 !== 'azul' ) { window.alert('Inaceitável!') }
-
-                        if ( caneta1 && caneta2 === 'azul' ) 
-                        { 
-                            window.alert('Ótimo! pode passar.') 
-                        }
-
-                        var resp1 = window.prompt("Em que país você está?")
-
-                        resp1 === 'brasil'? window.alert('Acertou!') : window.alert('Errou!')
-
-                        var idade = Number(window.prompt('Qual sua idade?'))
-
-                        var conclusao = idade >= 18? 'Você já pode dirigir.' : 'Você NÃO pode dirigir!'
-
-                        window.alert(conclusao)
-                    </script>
-                </div>
-
                 <div class="group-text">
-                    <p>Muitas pessoas entendem errado o conceito de programação e marcação de texto.</p>
+                    <p>Muitas pessoas não sabem a diferença entre Programação e Linguagem de Marcação de Texto</p>
                     <p>Mas, para começo de conversa, vamos falar sobre um pouco do princípio. Vamos falar sobre Domínio e Hospedagem.</p>
                 </div>
             </div>
@@ -68,6 +44,103 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="sec-teste-button">
+        <div id="button-interaja">
+            Hello World! Clique aqui!
+        </div>
+
+        <script>
+            var p = document.getElementById('button-interaja')
+            p.addEventListener('click', clicarbtn1)
+            p.addEventListener('mouseenter', entrarbtn1)
+            p.addEventListener('mouseout', sairbtn1)
+
+            function clicarbtn1() {
+                p.innerText = 'Boa!'
+                p.style.backgroundColor = 'green'
+            }
+
+            function entrarbtn1() {
+                p.innerText = 'Bora, agora é só clicar...'
+                p.style.backgroundColor = 'red'
+            }
+
+            function sairbtn1() {
+                p.innerText = 'Clique aqui novamente!'
+                p.style.backgroundColor = 'blue'
+            }
+        </script>
+    </section>
+
+    <section class="sec-calculadora">
+        <div class="container">
+            <div class="group-items">
+                <div>
+                    <h2 class="title">Selecione a operação e preencha os valores</h2>
+                </div>
+
+                <div>
+                    <select id="box-opcoes">
+                        <option value="Soma">Soma</option>
+                        <option value="Subtração">Subtração</option>
+                        <option value="Multiplicação">Multiplicação</option>
+                        <option value="Divisão">Divisão</option>
+                    </select>
+                </div>
+
+                <div class="group-input">
+                    <input type="text" class="input-box" id="n1">
+                    <input type="text" class="input-box" id="n2">
+                    <input type="button" value="Operar" class="button" onclick="somar()">
+                </div>
+
+                <div id="res"></div>
+            </div>
+        </div>
+
+        <script>
+            function somar() {
+
+                var sinal = document.getElementById('sinal')
+                var button = document.getElementById('button-operacao')
+                var opcao = document.getElementById('box-opcoes')
+
+                var n1 = document.getElementById('n1')
+                var n2 = document.getElementById('n2')
+                var res = document.getElementById('res')
+
+                n1 = Number(n1.value)
+                n2 = Number(n2.value)
+                
+                var selecao = opcao.value
+
+                if (selecao === 'Soma') 
+                { 
+                    total = n1 + n2
+                    res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${total}</strong>`
+                }
+
+                if (selecao === 'Subtração') 
+                { 
+                    total = n1 - n2
+                    res.innerHTML = `A subtração entre ${n1} e ${n2} é igual a <strong>${total}</strong>`
+                }
+
+                if (selecao === 'Multiplicação') 
+                { 
+                    total = n1 * n2
+                    res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a <strong>${total}</strong>`
+                }
+
+                if (selecao === 'Divisão') 
+                { 
+                    total = n1 / n2
+                    res.innerHTML = `A divisão entre ${n1} e ${n2} é igual a <strong>${total}</strong>`
+                }
+            }
+        </script>
     </section>
 </body>
 </html>
