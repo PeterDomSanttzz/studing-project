@@ -4,28 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Página inicial</title>
+    <title>Página - Início</title>
 </head>
 <body>
-    <section class="sec-menu">
-        <div class="container">
-            <div class="menu-content">
-                
-            </div>
-        </div>
-    </section>
-
     <section class="sec-banner">
         <div class="overlay"></div>
         <div class="container">
             <div class="title-content">
                 <div>
-                    <h1 class="title">HTML? CSS? Como assim?</h1>
+                    <h1 class="title">Área de testes HTML, CSS e JS</h1>
                 </div>
 
                 <div class="group-text">
-                    <p>Muitas pessoas não sabem a diferença entre Programação e Linguagem de Marcação de Texto</p>
-                    <p>Mas, para começo de conversa, vamos falar sobre um pouco do princípio. Vamos falar sobre Domínio e Hospedagem.</p>
+                    <p class="text-banner">Muitas pessoas não sabem a diferença entre Programação e Linguagem de Marcação de Texto</p>
+                    <p class="text-banner">Mas, para começo de conversa, vamos falar sobre um pouco do princípio. Vamos falar sobre Domínio e Hospedagem.</p>
                 </div>
             </div>
         </div>
@@ -81,14 +73,12 @@
                     <h2 class="title">Selecione a operação e preencha os valores</h2>
                 </div>
 
-                <div>
-                    <select id="box-opcoes">
-                        <option value="Soma">Soma</option>
-                        <option value="Subtração">Subtração</option>
-                        <option value="Multiplicação">Multiplicação</option>
-                        <option value="Divisão">Divisão</option>
-                    </select>
-                </div>
+                <select id="box-opcoes">
+                    <option value="Soma">Soma</option>
+                    <option value="Subtração">Subtração</option>
+                    <option value="Multiplicação">Multiplicação</option>
+                    <option value="Divisão">Divisão</option>
+                </select>
 
                 <div class="group-input">
                     <input type="text" class="input-box" id="n1">
@@ -141,6 +131,40 @@
                 }
             }
         </script>
+    </section>
+
+    <section class="sec-login">
+        <div class="container">
+            <div class="group-items">
+                <div>
+                    <h2 class="title">Efetue seu login</h2>
+                </div>
+
+                <div class="group-items">
+                    <div class="double-item">
+                        <p>Email:</p>
+                        <input type="text" class="input-box single-box">
+                    </div>
+                    
+                    <div class="double-item">
+                        <p>Senha:</p>
+                        <input type="text" class="input-box single-box">
+                    </div>
+
+                    <div>
+                        <a class="clique-aqui" href="./page-cadastro.html">Caso não tenha cadastro, clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-redirec-ex-guanabara">
+        <div class="container">
+            <a class="button redirect-ex-guanabara" href="./ex-guanabara01.html">
+                Clique aqui para ver o exercício do Guanabara
+            </a>
+        </div>
     </section>
 </body>
 </html>
