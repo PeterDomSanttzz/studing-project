@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ex-guanabara02.css">
+    <title>Exercício 02 - Guanabara</title>
+</head>
+
+<body>
+    <section class="sec-ex-guanabara">
+            <div class="container">
+                <h1 class="title">Verificador de Idade</h1>
+
+                <div class="verificador-content">
+                    <div class="items-inline">
+                        <p class="text-of-input">Ano de Nascimento:</p>
+                        <input type="number" class="input-config" name="txt-ano" id="txt-ano" min="0">
+                    </div>    
+
+                    <div class="items-inline">
+                        <p class="text-of-input">Sexo:</p>
+                        <input type="radio" name="radioSex" id="mas">
+                        <p class="text-of-input">Masculino</p>
+                        <input type="radio" name="radioSex" id="fem">
+                        <p class="text-of-input">Feminino</p>
+                    </div>
+
+                    <div>
+                        <button onclick="verificar()" class="button">Verificar</button>
+                    </div>
+
+                    <div>
+                        <p id="res">Preencha os dados para ver o resultado!</p>
+                    </div>
+
+                    <div class="img-area">
+                        <img src="" class="img-config" id="img">
+                    </div>
+                </div>
+
+                <div>
+                    <p id="text-copy">&copy;CursoEmVideo</p>
+                </div>
+            </div>
+    </section>
+
+    <script src="ex-guanabara02.js"></script>
+</body>
+</html>

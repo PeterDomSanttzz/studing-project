@@ -19,7 +19,7 @@ function load() {
         document.body.style.background = 'linear-gradient(45deg, #682600ff, #ff7b00ff)'
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundSize = 'cover'
-
+ 
     }
 
     else {
