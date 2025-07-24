@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background-color: #3e85d5;
+    color: white;
+}
+.container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------------------------------------------------*/
+.sec-ex-guanabara {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+.title {
+    color: white;
+    font-size: 45px;
+    filter: drop-shadow(0px 0px 7px black);
+}
+.verificador-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 3px black);
+}
+.input-config {
+    width: 50px;
+    padding: 5px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #797979;
+    border-width: 1px;
+}
+.text-of-input {
+    margin: 0;
+}
+.items-inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #5faaff;
+    background: #9ac9ff;
+    font-size: 15px;
+}
+.button:hover {
+    cursor: pointer;
+    background: #8fbcf1;
+}
+.img-area {
+    display: flex;
+    justify-content: center;
+}
+.img-config {
+    width: 200px;
+    border-radius: 100px;
+    border-style: none;
+}
+#text-copy {
+    color: white;
+}
+#res {
+    margin: 0;
+    font-weight: bold;
+}
