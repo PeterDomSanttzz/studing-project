@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #c7c7ff;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -21,7 +21,7 @@ body {
     position: fixed;
     z-index: 10;
     background: #3f3fff;
-    filter: drop-shadow(0px 3px 3px #b1b1b1);
+    filter: drop-shadow(0px -1px 5px black);
 }
 .menu .container {
     height: 110px;
@@ -90,12 +90,12 @@ body {
 .carrossel {
     margin: 0 auto;
     width: 1000px;
-    height: 760px;
+    height: 560px;
     overflow: hidden;
 }
 .slides {
     width: 900%;
-    height: 760px;
+    height: 560px;
     display: flex;
 }
 .slides input {
@@ -107,7 +107,7 @@ body {
 }
 .slide img {
     width: 1000px;
-    height: 760px;
+    height: 560px;
 }
 .manual-navigation {
     position: absolute;
@@ -118,14 +118,14 @@ body {
     gap: 15px;
 }
 .manual-btn {
-    border: 2px solid #3f3fff;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 400ms ease;
 }
 .manual-btn:hover {
-    background: #3f3fff;
+    background: white;
 }
 #radio-1:checked ~ .first {
     margin-left: 0;
