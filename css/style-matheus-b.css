@@ -1,5 +1,5 @@
 body {
-    background-color: #c7c7ff;
+    background-color: #ececec;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -8,7 +8,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
 }
 
 .rascunho {
@@ -22,15 +22,20 @@ body {
     z-index: 10;
     background: #3f3fff;
     filter: drop-shadow(0px -1px 5px black);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .menu .container {
     height: 110px;
+    display: flex;
+    align-items: center;
 }
 .menu-content {
     height: 110px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 220px;
 }
 .icon-config {
     width: 120px;
@@ -81,13 +86,13 @@ body {
     background: #3f3fff;
     color: white;
 }
-.banner {
+.sec-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 110px;
 }
-.carrossel {
+.carrossel-banner {
     margin: 0 auto;
     width: 1000px;
     height: 560px;
@@ -143,12 +148,57 @@ body {
     margin-left: -75%;
     transition: 400ms;
 }
-.produtos {
+.sec-produtos {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0;
+    flex-direction: column;
+    margin-top: 150px;
     height: 98dvh;
+}
+.titulo-carrossel {
+
+}
+.carrossel-cat {
+
+}
+.group-produtos {
+    display: grid;
+    grid-template-areas: 'g1 g2 g3 g4 g5 g6 g7 g8 g9';
+    gap: 25px;
+    overflow: hidden;
+}
+.group-produtos > .produto:nth-child(1) {
+    grid-area: g1;
+}
+.group-produtos > .produto:nth-child(2) {
+    grid-area: g2;
+}
+.group-produtos > .produto:nth-child(3) {
+    grid-area: g3;
+}
+.group-produtos > .produto:nth-child(4) {
+    grid-area: g4;
+}
+.group-produtos > .produto:nth-child(5) {
+    grid-area: g5;
+}
+.group-produtos > .produto:nth-child(6) {
+    grid-area: g6;
+}
+.group-produtos > .produto:nth-child(7) {
+    grid-area: g7;
+}
+.group-produtos > .produto:nth-child(8) {
+    grid-area: g8;
+}
+.group-produtos > .produto:nth-child(9) {
+    grid-area: g9;
+}
+.produto {
+    
+}
+.img-cat {
+    width: 200px;
 }
 .footer {
     display: flex;
