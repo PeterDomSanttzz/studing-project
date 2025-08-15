@@ -13,7 +13,7 @@
                 <div class="group-items-inline">
                     <img src="../imgs-Market/imgs-Icones/logo-market.png" class="icon-config">
                     <a href="#" class="link-style">Fale Conosco</a>
-                    <a href="#" class="link-style">Verificar Carrinho</a>
+                    <a href="#" class="link-style">Ver Carrinho</a>
                     <a href="#" class="link-style">Vender Produto</a>
                 </div>
 
@@ -70,47 +70,64 @@
 
     <section class="sec-produtos">
         <div class="container">
-            <div class="titulo-carrossel">
-                <h2>Brinquedos (Esse título não é fixo.)</h2>
-            </div>
-
-            <div class="carrossel-cat">
-                <div class="btn-back" id="btn-back" onclick="voltar()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: #3f3fff;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+            <div class="carrossel-brinquedos">
+                <div>
+                    <h2 class="title-config">Brinquedos</h2>
                 </div>
 
-                <div class="group-produtos">
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                    <div class="produto">
-                        <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
-                    </div>
-                </div>
+                <div class="carrossel-cat">
+                    <script src="./Market.js"></script>
 
-                <div class="btn-next"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: #3f3fff;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    <div class="btn-back" onclick="voltar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="svg-btn-voltar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                    </div>
+                    
+                    <div class="group-produtos-area">
+                        <div class="group-produtos" id="carrossel-brinquedos">
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/bola.jpg" class="img-cat">
+                                <p class="preco-produto">R$190,00</p>
+                                <p class="frete-gratis-produto">Frete grátis</p>
+                                <p class="descricao-produto">Bola de Basquete laranja da Wilson</p>
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/carro-controle-remoto.jpg" class="img-cat">
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/arma-dagua.jpg" class="img-cat">
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/boneco.jpg" class="img-cat">
+                            </div>
+                            
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/espada.jpg" class="img-cat">
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/formas-geometricas.jpg" class="img-cat">
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/motoca.jpg" class="img-cat">
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/pista-hotwheells.jpg" class="img-cat">
+                            </div>
+
+                            <div class="produto">
+                                <img src="../imgs-Market/imgs-Cat/imgs-Brinquedos/skate.jpg" class="img-cat">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-next" onclick="avancar()"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" id="svg-btn-avancar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,5 +139,4 @@
         </div>
     </section>
 </body>
-    <script src="./Market.js"></script>
 </html>
