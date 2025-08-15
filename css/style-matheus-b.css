@@ -96,60 +96,23 @@ body {
     margin-top: 110px;
 }
 .carrossel-banner {
-    margin: 0 auto;
-    width: 1000px;
-    height: 560px;
+
+}
+.group-slides-area {
+    display: flex;
     overflow: hidden;
 }
-.slides {
-    width: 900%;
-    height: 560px;
+.group-slides {
     display: flex;
-}
-.slides input {
-    display: none;
 }
 .slide {
-    width: 25%;
-    position: relative;
+    transition: all 500ms ease;
+    max-width: 908px;
+    width: max-content;
 }
-.slide img {
-    width: 1000px;
-    height: 560px;
-}
-.manual-navigation {
-    position: absolute;
-    width: 1000px;
-    margin-top: -30px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-.manual-btn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 400ms ease;
-}
-.manual-btn:hover {
-    background: white;
-}
-#radio-1:checked ~ .first {
-    margin-left: 0;
-    transition: 400ms;
-}
-#radio-2:checked ~ .first {
-    margin-left: -25%;
-    transition: 400ms;
-}
-#radio-3:checked ~ .first {
-    margin-left: -50%;
-    transition: 400ms;
-}
-#radio-4:checked ~ .first {
-    margin-left: -75%;
-    transition: 400ms;
+.img-banner {
+    width: 100%;
+    height: 100%;
 }
 .sec-produtos {
     display: flex;

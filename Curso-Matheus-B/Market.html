@@ -7,6 +7,8 @@
     <title>Página Inicial</title>
 </head>
 <body>
+    <script src="./Market.js"></script>
+
     <section class="menu">
         <div class="container">
             <div class="menu-content">
@@ -28,42 +30,15 @@
     <section class="sec-banner">
         <div class="container">
             <div class="carrossel-banner">
-                <div class="slides">
-
-                    <input type="radio" name="radio-btn" id="radio-1">
-                    <input type="radio" name="radio-btn" id="radio-2">
-                    <input type="radio" name="radio-btn" id="radio-3">
-                    <input type="radio" name="radio-btn" id="radio-4">
-
-                    <div class="slide first">
-                        <img src="../imgs-Market/imgs-Promo/geladeira.jpg">
-                    </div>
+                <div class="group-slides-area">
                     <div class="slide">
-                        <img src="../imgs-Market/imgs-Promo/teclado.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="../imgs-Market/imgs-Promo/placa-de-video.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="../imgs-Market/imgs-Promo/parafusadeira.jpg">
+                        <img src="../imgs-Market/imgs-Promo/teclado.jpg" class="img-banner">
                     </div>
 
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
+                    <div class="slide">
+                        <img src="../imgs-Market/imgs-Promo/teclado.jpg" class="img-banner">
                     </div>
-
                 </div>
-
-                <div class="manual-navigation">
-                    <label for="radio-1" class="manual-btn"></label>
-                    <label for="radio-2" class="manual-btn"></label>
-                    <label for="radio-3" class="manual-btn"></label>
-                    <label for="radio-4" class="manual-btn"></label>
-                </div>
-
             </div>
         </div>
     </section>
@@ -76,8 +51,6 @@
                 </div>
 
                 <div class="carrossel-cat">
-                    <script src="./Market.js"></script>
-
                     <div class="btn-back" onclick="voltar()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="svg-btn-voltar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                     </div>
