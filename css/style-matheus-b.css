@@ -7,7 +7,7 @@ body {
 }
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 80%;
 }
 
@@ -15,8 +15,30 @@ body {
     font-size: 35px;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
-.carrossel-brinquedos {
-    
+.modal-start {
+    position: fixed;
+    position-area: center;
+    z-index: 12;
+}
+#modal-erro {
+    display: none;
+    position: fixed;
+    position-area: center;
+    z-index: 12;
+}
+.btn-modal {
+
+}
+.checkbox {
+
+}
+#fundo-escuro {
+    position: fixed;
+    z-index: 12;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
 }
 .menu {
     height: 110px;

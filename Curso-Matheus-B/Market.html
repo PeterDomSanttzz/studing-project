@@ -9,6 +9,29 @@
 <body>
     <script src="./Market.js"></script>
 
+    <div id="fundo-escuro"></div>
+
+    <dialog open class="modal-start" id="modal-select">
+        <h2>Selecione 3 categorias de produtos desejados:</h2>
+
+        <div>
+            <p><input type="checkbox" class="checkbox" value="brinquedos">Brinquedos</p>
+            <p><input type="checkbox" class="checkbox" value="eletrodomesticos">Eletrodomésticos</p>
+            <p><input type="checkbox" class="checkbox" value="jardinagem">Jardinagem</p>
+            <p><input type="checkbox" class="checkbox" value="roupaseacessorios">Roupas e Acessórios</p>
+            <p><input type="checkbox" class="checkbox" value="tecnologia">Tecnologia</p>
+            <p><input type="checkbox" class="checkbox" value="utensiliosdecozinha">Utensílios de Cozinha</p>
+        </div>
+
+        <button class="btn-modal" onclick="modal_avancar()">Continuar</button>
+    </dialog>
+
+    <dialog open id="modal-erro">
+        <h2>Selecione 3 categorias, por favor.</h2>
+
+        <button class="btn-modal" onclick="fechar_modal_erro()">Ok</button>
+    </dialog>
+
     <section class="menu">
         <div class="container">
             <div class="menu-content">
@@ -47,7 +70,7 @@
         <div class="container">
             <div class="carrossel-brinquedos">
                 <div>
-                    <h2 class="title-config">Brinquedos</h2>
+                    <h2 class="title-config" id="title-config">Brinquedos</h2>
                 </div>
 
                 <div class="carrossel-cat">
