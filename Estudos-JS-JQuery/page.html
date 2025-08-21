@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/consumindo-api.css">
+    <title>Consumindo API</title>
+</head>
+<body>
+    <script src="./script.js"></script>  
+
+    <section class="sec1">
+        <div class="container">
+            <h1 class="title-config">Consumindo API!</h1>
+
+            <p>Digite abaixo o número do produto que deseja exibir (30 produtos disponíveis)</p>
+
+            <input type="number" class="input-config" id="num-produto">
+
+            <h2 class="sub-title-config">Clique no botão abaixo para apresentar dados de uma URL</h2>
+
+            <button class="btn-config" onclick="exec()">Executar</button>
+
+            <div class="data-box">
+                <img src="" id="img">
+
+                <p id="name"></p>
+
+                <p id="preco"></p>
+
+                <h2 id="error-message"></h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
