@@ -8,6 +8,7 @@ function exec() {
     let error_message = document.getElementById('error-message');
 
     resp_usuario.value = resp_usuario.value - 1;
+
     error_message.style.display = 'none'
 
     if (resp_usuario.value < 0 || resp_usuario.value > 29) {
@@ -30,6 +31,6 @@ function exec() {
             nome.innerText = produto.title
             preco.innerText = 'R$' + produto.price
             img.src = produto.images[0]
-        });
+        })
     }
 }

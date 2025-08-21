@@ -1,4 +1,9 @@
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 body {
     background-color: #c6c6c6;
     display: flex;
@@ -24,10 +29,11 @@ body {
     font-size: 50px;
 }
 .input-config {
-    padding: 7px;
+    padding: 10px;
     border-style: solid;
     border-color: grey;
     border-width: 1px;
+    border-radius: 20px;
     text-align: center;
 }
 .sub-title-config {
